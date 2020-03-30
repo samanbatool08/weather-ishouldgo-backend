@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 
     def login
         user = User.find_by(username: params[:user][:username])
+        # add auth
         if user && user.authenticate(params[:user][:password])
         render json: user
         else
