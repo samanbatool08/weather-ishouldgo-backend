@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   
 
+  resources :activities, only: [:index, :create, :show, :destroy]
 
-  resources :activities, only: [:index, :create, :show]
 
-  resources :user_activities, only: [:create, :show]
+  resources :user_activities, only: [:create, :show, :index, :destroy]
 
 end
