@@ -73,8 +73,8 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  # Fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  # # Fallback to assets pipeline if a precompiled asset is missed.
+  # config.assets.compile = true
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
