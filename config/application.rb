@@ -23,7 +23,7 @@ module WeatherApplication
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
-    
+
     # # Add node_modules to assets paths
     # config.assets.paths << Rails.root.join("node_modules")
 
